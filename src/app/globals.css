@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #FEECE2;
+    font-family: "Balthazar";
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    position: relative;
+    left: 18%;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50vh;
+    position: relative;
+    top: 0px;
+    left: 300px;
+    right: 15px;
+}
+
+/*.button-holder button {
+    background-color:#FF7722;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 25px;
+    width: 90px;
+}*/
+
+.cards-container {
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.card {
+    background-color: #FFBE98;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 275px;
+    width: 400px;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/*.card button {
+    font-weight: 100 bold;
+    color: white;
+    background-color: #00563B;
+    border-radius: 10px;
+    width:75px;
+    height: 30px;
+    position: relative;
+    left: 1%;
+    margin-top: 20px;
+}*/
+
+/* .card label {
+    margin: 10px 0px;
+    width: 250px;
+    border-radius: 7px;
+    height: 27px;
+    background-color: #F7DED0;
+    color: black;
+} */
+
+.card label input {
+    height: 17px;
+    width: 17px;
+}
+
+.party {
+    padding-left: 10px;
 }
